@@ -15,19 +15,3 @@ script5.sh: The Open Source Manifesto Generator (Unit 5)
 report.md: The detailed open-source audit report for Git. To convert this file to a PDF format as required, you can use Pandoc or export via a markdown editor (like VS Code or Typora).
 Instructions to Run the Scripts on Linux
 To correctly run and evaluate these scripts, execute them in a Linux environment (such as Ubuntu, Fedora, or an institutional lab machine/VM).
-
-Prerequisites
-Make sure scripts are executable:
-
-chmod +x *.sh
-Running the Scripts
-System Identity Report: prints out details about your Linux environment.
-./script1.sh
-FOSS Package Inspector: checks if git (or any other FOSS package) is installed.
-./script2.sh          # Defaults to checking 'git'
-Disk and Permission Auditor: checks system directories and config spaces.
-./script3.sh
-Log File Analyzer: scans logs for keywords. (sudo might be needed depending on the log file)
-sudo ./script4.sh /var/log/syslog "error"
-Open Source Manifesto Generator: interactively creates a personalized FOSS mandate txt file.
-./script5.sh
